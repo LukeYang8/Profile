@@ -1,0 +1,41 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: blue;
+    width: 100%;
+    height: 100%;
+    min-height: 75px;
+    background-color: antiquewhite;
+}
+
+.navbar .logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin-left: 30px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    margin-right: 30px;
+}
+
+.navbar a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+}

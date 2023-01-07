@@ -26,7 +26,7 @@ body{
     font-size: 40px;
     font-weight: bold;
     color: black;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .navbar ul{
@@ -44,6 +44,11 @@ body{
     font-weight: bold;
     font-size: 40px;
 }
+
+.navbar a:hover{
+    color:white;
+}
+
 
 .container{
     display: flex;
@@ -119,6 +124,7 @@ body{
     max-height: 100px;
 }
 
+
 .chaewon-container{
     display: flex;
     justify-content: center;
@@ -127,6 +133,7 @@ body{
 
 .chaewon img{
     width: 1000px;
+    position: sticky;
 }
 
 .space {
@@ -135,4 +142,17 @@ body{
 
 
 
+.back-to-top{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    max-width: 20px;
+}
 
+.back-to-top img{
+    max-width: 40px;
+}
+
+.back-to-top button:hover{
+    background-color: purple;
+}

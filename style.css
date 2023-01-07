@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #480CA8;
+    background-image: url("./images/seamless\ background\ 5.gif");
 }
 
 .navbar{
@@ -24,7 +24,8 @@ body{
 
 .navbar .logo{
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 100;
+    font-family: 'Permanent Marker', cursive;
     color: black;
     margin-left: 40px;
 }
@@ -43,11 +44,19 @@ body{
     text-decoration: none;
     font-weight: bold;
     font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .navbar a:hover{
     color:white;
 }
+
+.heading{
+    color: white;
+    font-size: 100px;
+    font-weight: 900;
+}
+
 
 
 .container{
@@ -71,6 +80,8 @@ body{
     color: #F72585;
     text-align: center;
     font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: solid underline;
     
 }
 
@@ -78,14 +89,25 @@ body{
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 10px;
 
-    font: bold 20px Arial, Helvetica, sans-serif;
+    font: bolder 30px 'Josefin Sans', sans-serif;;
+
     color:azure;
+}
+
+.mbti{
+    padding-top: 10px;
+    text-align: center;
+    font: 900 50px 'Permanent Marker', cursive;
+    color: red;
+
 }
 
 .container .hobbies{
     background-color: #4895EF;
-    min-height: 300px;
+    min-height: 50px;
+    min-width: 800px;
     max-width: 60%;
     border-radius: 70px;
 }
@@ -93,7 +115,9 @@ body{
 .container .hobbies h2{
     color: #F72585;
     text-align: center;
+    vertical-align: middle;
     font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
     
 }
 
@@ -106,11 +130,68 @@ body{
     color:azure;
 }
 
+.games-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 500px;
+}
+
+.game-container{
+    position: relative;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.game-box{
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+.game-image{
+    opacity: 1;
+    min-width: 100%;
+    display: block;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    border-radius: 30px;
+}
+
+.game-logo{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+    color: #F72585;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+.game-container:hover .game-image{
+    opacity: 0.3;
+}
+
+.game-container:hover .game-logo{
+    opacity: 1;
+}
+
 #socials{
     color: #F72585;
     text-align: center;
     font-size: 40px;
     text-decoration: 2px underline;
+    font-family: 'Permanent Marker', cursive;
+    
 }
 
 
@@ -124,15 +205,23 @@ body{
     max-height: 100px;
 }
 
+#github{
+    background-color: white;
+    border-radius: 20px;
+}
+
 
 .chaewon-container{
     display: flex;
     justify-content: center;
     background-color: none;
+    font-family: 'Permanent Marker', cursive;
+
 }
 
+
 .chaewon img{
-    width: 1000px;
+    width: 400px;
     position: sticky;
 }
 
@@ -153,6 +242,6 @@ body{
     max-width: 40px;
 }
 
-.back-to-top button:hover{
+.back-to-top img:hover{
     background-color: purple;
 }

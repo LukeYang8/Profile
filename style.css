@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url("./images/seamless\ background\ 5.gif");
+    background: linear-gradient(180deg, #1fb3b6, 5%, #119dff, 50%, #2f34af);
 }
 
 .navbar{
@@ -19,7 +19,8 @@ body{
     width: 100%;
     height: 100%;
     min-height: 75px;
-    background-color: #7209B7;
+    background-color: #03045E;
+    border-radius: 5px;
 }
 
 .navbar .logo{
@@ -40,7 +41,7 @@ body{
 }
 
 .navbar a{
-    color: #F72585;
+    color: #00B4D8;
     text-decoration: none;
     font-weight: bold;
     font-size: 40px;
@@ -49,13 +50,30 @@ body{
 
 .navbar a:hover{
     color:white;
+    position: relative;
+    animation-name: navbar-hover;
+    animation-duration: 1;
 }
 
+
 .heading{
-    color: white;
+    background: none;
     font-size: 100px;
     font-weight: 900;
+    animation-name: heading-change-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
+
+@keyframes heading-change-color{
+    0% {color: #03045E; top:0px;}
+    33% {color: #004c75; top:2px;}
+    50% {color: #03045E; top:5px;}
+    65% {color: #004c75; top:2px;}
+    100% {color: #03045E; top:0px;}
+}
+
 
 
 
@@ -70,14 +88,14 @@ body{
 }
 
 .container .about-me{
-    background-color: #4895EF;
+    background-color: #00B4D8;
     min-height: 300px;
     max-width: 60%;
     border-radius: 70px;
 }
 
 .container .about-me h2{
-    color: #F72585;
+    color: #03045E;
     text-align: center;
     font-size: 50px;
     font-family: 'Permanent Marker', cursive;
@@ -93,7 +111,7 @@ body{
 
     font: bolder 30px 'Josefin Sans', sans-serif;;
 
-    color:azure;
+    color:#03045E;
 }
 
 .about-me img{
@@ -108,7 +126,7 @@ body{
     padding-top: 10px;
     text-align: center;
     font: 600 50px 'Permanent Marker', cursive;
-    color: red;
+    color: #03045E;
 
 }
 
@@ -120,7 +138,7 @@ body{
 }
 
 .container .hobbies{
-    background-color: #4895EF;
+    background-color: #00B4D8;
     min-height: 50px;
     min-width: 800px;
     max-width: 60%;
@@ -128,7 +146,7 @@ body{
 }
 
 .container .hobbies h2{
-    color: #F72585;
+    color: #03045E;
     text-align: center;
     vertical-align: middle;
     font-size: 50px;
@@ -202,7 +220,7 @@ body{
 }
 
 #socials{
-    color: #F72585;
+    color: #03045E;
     text-align: center;
     font-size: 40px;
     text-decoration: 2px underline;
@@ -221,13 +239,14 @@ body{
     max-height: 100px;
 }
 
-#github{
+#linkedin{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 15px;
+
 }
 
 
-.chaewon-container{
+.watering-can-container{
     display: flex;
     justify-content: center;
     background-color: none;
@@ -236,10 +255,26 @@ body{
 }
 
 
-.chaewon img{
+.watering-can img{
     width: 400px;
     position: sticky;
 }
+
+.watering-can:hover{
+    animation-name: watering-can-rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes watering-can-rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 .space {
     margin: 100px;
